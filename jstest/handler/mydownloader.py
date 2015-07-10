@@ -54,12 +54,12 @@ class SeleniumLogicDownloader(object):
             pass
 
     def phantom_download(self, url, *args, **kwargs):
-        # desire_cap = DesiredCapabilities.PHANTOMJS.copy()
-        # user_agent = random.choice(project_setting.get('USER_AGENTS'))
-        # desire_cap["phantomjs.page.settings.userAgent"] = user_agent
-        # desire_cap['phantomjs.page.customHeaders.User-Agent'] = user_agent
-        # driver = webdriver.PhantomJS(desired_capabilities=desire_cap)
-        driver = driver_pool.get_driver()
+        desire_cap = DesiredCapabilities.PHANTOMJS.copy()
+        user_agent = random.choice(project_setting.get('USER_AGENTS'))
+        desire_cap["phantomjs.page.settings.userAgent"] = user_agent
+        desire_cap['phantomjs.page.customHeaders.User-Agent'] = user_agent
+        driver = webdriver.PhantomJS(desired_capabilities=desire_cap)
+        # driver = driver_pool.get_driver()
         try:
             driver.set_page_load_timeout(project_setting.get('WAIT_PAGE_LOAD'))
             driver.set_window_size(1366, 768)
@@ -85,8 +85,8 @@ class SeleniumLogicDownloader(object):
             except TimeoutException as e:
                 raise LoadJsTimeoutException
         finally:
-            driver_pool.put_driver(driver)
-            # driver.quit()
+            # driver_pool.put_driver(driver)
+            driver.quit()
 
 
 class SeleniumDownloadHandler(object):
