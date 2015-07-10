@@ -1,0 +1,219 @@
+[INFO  - 2015-07-10T07:32:35.036Z] GhostDriver - Main - running on port 53656
+[INFO  - 2015-07-10T07:32:35.395Z] Session [d557d1a0-26d5-11e5-805c-290a1ac61ce8] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)","webSecurityEnabled":true}
+[INFO  - 2015-07-10T07:32:35.395Z] Session [d557d1a0-26d5-11e5-805c-290a1ac61ce8] - page.customHeaders:  - {"User-Agent":"Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)"}
+[INFO  - 2015-07-10T07:32:35.396Z] Session [d557d1a0-26d5-11e5-805c-290a1ac61ce8] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.0.0","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-unknown-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.customHeaders.User-Agent":"Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)","phantomjs.page.settings.userAgent":"Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)"}
+[INFO  - 2015-07-10T07:32:35.396Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: d557d1a0-26d5-11e5-805c-290a1ac61ce8
+[ERROR - 2015-07-10T07:33:17.301Z] Session [d557d1a0-26d5-11[ERROR - 2015-07-10T07:36:03.304Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+
+  :262 in error
+[ERROR - 2015-07-10T07:36:03.305Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - stack:
+  global code (http://forum.huskermax.com/vbbs/dbtech/vbshout/clientscript/jquery.tmpl.min.js:1)
+
+  :262 in error
+[ERROR - 2015-07-10T07:36:03.308Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - msg: ReferenceError: Can't find variable: $
+
+  :262 in error
+[ERROR - 2015-07-10T07:36:03.308Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - stack:
+  global code (http://forum.huskermax.com/vbbs/dbtech/vbshout/clientscript/vbshout.js?v=626:2)
+
+  :262 in error
+[INFO  - 2015-07-10T07:37:28.979Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-07-10T07:42:28.979Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-07-10T07:44:23.983Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - msg: ReferenceError: Can't find variable: Shadowbox
+
+  :262 in error
+[ERROR - 2015-07-10T07:44:23.983Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - stack:
+  global code (http://forum.xda-developers.com/nexus-6/general/google-launches-project-fi-nexus-6-t3089959/page25:139)
+
+  :262 in error
+[ERROR - 2015-07-10T07:44:24.084Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - msg: ReferenceError: Can't find variable: vBulletin_init
+
+  :262 in error
+[ERROR - 2015-07-10T07:44:24.084Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - stack:
+  global code (http://forum.xda-developers.com/nexus-6/general/google-launches-project-fi-nexus-6-t3089959/page25:3377)
+
+  :262 in error
+[ERROR - 2015-07-10T07:45:02.123Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - msg: ReferenceError: Can't find variable: prettyPrint
+
+  :262 in error
+[ERROR - 2015-07-10T07:45:02.124Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - stack:
+  (anonymous function) (http://forum.xda-developers.com/nexus-6/general/google-launches-project-fi-nexus-6-t3089959/page25:173)
+  j (http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js:2)
+  fireWith (http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js:2)
+  ready (http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js:2)
+  I (http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js:2)
+
+  :262 in error
+[ERROR - 2015-07-10T07:46:53.849Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+
+  :262 in error
+[ERROR - 2015-07-10T07:46:53.849Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - stack:
+  global code (http://blog.seattlepi.com/football/2015/05/05/seattle-seahawks-have-history-of-giving-troubled-players-second-chances/:132)
+
+  :262 in error
+[ERROR - 2015-07-10T07:47:12.305Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'outbrain_rater.insertRater()')
+
+  :262 in error
+[ERROR - 2015-07-10T07:47:12.305Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - stack:
+  OutbrainStart (http://widgets.outbrain.com/outbrainWidget.js:220)
+
+  :262 in error
+[INFO  - 2015-07-10T07:47:28.979Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-07-10T07:52:28.990Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-07-10T07:53:35.572Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new google.maps.InfoWindow()')
+
+  :262 in error
+[ERROR - 2015-07-10T07:53:35.572Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - stack:
+  global code (http://citizensvoice.com/js/googlemaps.js:2)
+
+  :262 in error
+[ERROR - 2015-07-10T07:55:06.624Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this video. [object Object]
+
+  :262 in error
+[ERROR - 2015-07-10T07:55:06.624Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - stack:
+  _logType (http://d27qbddozpoqw3.cloudfront.net/assets/tesla/autocube-2ea387bf53758019e2df0c618b30c2de.js:1)
+
+  :262 in error
+[ERROR - 2015-07-10T07:56:11.093Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - msg: TypeError: undefined is not a constructor (evaluating '$('.w_def_text').live('click',function(){var text=$(this).attr('title');if($(this).val()==text){$(this).val('');}
+$(this).focus();})')
+
+  :262 in error
+[ERROR - 2015-07-10T07:56:11.094Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - stack:
+  init_fields (http://seneweb.com/v3/layout/js/main.js:2)
+  (anonymous function) (http://seneweb.com/v3/layout/js/main.js:44)
+  c (http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js:4)
+  fireWith (http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js:4)
+  ready (http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js:4)
+  q (http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js:4)
+  nrWrapper (http://seneweb.com/news/people/akon-achete-une-mercedes-blindee-pour-un_n_154336.html:33)
+
+  :262 in error
+[INFO  - 2015-07-10T07:57:28.990Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-07-10T07:59:30.082Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - msg: Undefined space: Futbol_Internacional_200x75
+
+  :262 in error
+[ERROR - 2015-07-10T07:59:30.083Z] Session [d1b70430-26d5-11e5-8ab6-1d351f9ffd0c] - page.onError - stack:
+  showSpace (http://us.img.e-planning.net/layers/epl-41.js:1716)
+  eplSetAdM (http://www.record.com.mx/articulo/noticias/3753065/futbol+futbol-internacional/messi-encamina-al-barcelona-a-semis:54)
+
+  :262 in error
+ (http://forum.xda-developers.com/nexus-9/general/5-0-2-experience-discussion-t3101025/page8:139)
+
+  :262 in error
+[ERROR - 2015-07-10T07:55:31.607Z] Session [d42285f0-26d5-11e5-8d15-3bb72a9213cf] - page.onError - msg: ReferenceError: Can't find variable: vBulletin_init
+
+  :262 in error
+[ERROR - 2015-07-10T07:55:31.607Z] Session [d42285f0-26d5-11e5-8d15-3bb72a9213cf] - page.onError - stack:
+  global code (http://forum.xda-developers.com/nexus-9/general/5-0-2-experience-discussion-t3101025/page8:3346)
+
+  :262 in error
+[ERROR - 2015-07-10T07:56:13.549Z] Session [d42285f0-26d5-11e5-8d15-3bb72a9213cf] - page.onError - msg: ReferenceError: Can't find variable: prettyPrint
+
+  :262 in error
+[ERROR - 2015-07-10T07:56:13.549Z] Session [d42285f0-26d5-11e5-8d15-3bb72a9213cf] - page.onError - stack:
+  (anonymous function) (http://forum.xda-developers.com/nexus-9/general/5-0-2-experience-discussion-t3101025/page8:173)
+  j (http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js:2)
+  fireWith (http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js:2)
+  ready (http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js:2)
+  I (http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js:2)
+
+  :262 in error
+[INFO  - 2015-07-10T07:57:37.243Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-07-10T07:58:53.949Z] Session [d42285f0-26d5-11e5-8d15-3bb72a9213cf] - page.onError - msg: Error: Load timeout for modules: //cdn.livefyre.com/libs/fyre.conv/v3.0.0/livefyre.min.js
+http://requirejs.org/docs/errors.html#timeout
+
+  :262 in error
+[ERROR - 2015-07-10T07:58:53.949Z] Session [d42285f0-26d5-11e5-8d15-3bb72a9213cf] - page.onError - stack:
+  defaultOnError (http://cdn.livefyre.com/libs/Livefyre/v0.7.0/builds/50/Livefyre.min.js:1)
+  c (http://cdn.livefyre.com/libs/Livefyre/v0.7.0/builds/50/Livefyre.min.js:1)
+  d (http://cdn.livefyre.com/libs/Livefyre/v0.7.0/builds/50/Livefyre.min.js:1)
+  (anonymous function) (http://cdn.livefyre.com/libs/Livefyre/v0.7.0/builds/50/Livefyre.min.js:1)
+  nrWrapper (http://venturebeat.com/2015/05/06/jamil-moledina-gives-us-a-glimpse-into-the-google-play-of-2020/:26)
+
+  :262 in error
+7.1/jquery.min.js:2)
+  each (http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js:2)
+  compl[INFO  - 2015-07-10T07:52:35.043Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+js:2)
+  fireWith (http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js:2)
+  w (http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js:4)
+  d (http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js:4)
+
+  :262 in error
+[ERROR - 2015-07-10T07:49:55.998Z] Session [d2ed6150-26d5-11e5-9b60-d3f3497d910d] - page.onError - msg: Error: Syntax error, unrecognized expression: <h2>More Inside PCMag.com</h2>
+<ul>
+
+    <li>
+        <a href="http://www.pcmag.com/slideshow/story/331464/10-hidden-roku-tricks-for-streaming-success?ipmat=334236&ipmtype=5"><img src="http://www3.pcmag.com/media/images/381351-roku-tips.jpg?width=163&height=85"/></a>
+        <a href="http://www.pcmag.com/slideshow/story/331464/10-hidden-roku-tricks-for-streaming-success?ipmat=334236&ipmtype=5">10 Hidden Roku Tricks for Streaming...</a>
+    </li>
+
+    <li>
+        <a href="http://www.pcmag.com/slideshow/story/335896/the-coolest-3d-printed-cars-so-far?ipmat=334236&ipmtype=5"><img src="http://www7.pcmag.com/media/images/394850-3d-printed-cars.jpg?width=163&height=85"/></a>
+        <a href="http://www.pcmag.com/slideshow/story/335896/the-coolest-3d-printed-cars-so-far?ipmat=334236&ipmtype=5">The Coolest 3D-Printed Cars (So Far...</a>
+    </li>
+
+    <li>
+        <a href="http://www.pcmag.com/slideshow/story/335764/how-many-of-these-weird-internet-appliances-do-you-remember?ipmat=334236&ipmtype=5"><img src="http://www1.pcmag.com/media/images/394480-the-lost-age-of-the-internet-appliance.jpg?width=163&height=85"/></a>
+        <a href="http://www.pcmag.com/slideshow/story/335764/how-many-of-these-weird-internet-appliances-do-you-remember?ipmat=334236&ipmtype=5">How Many of These Weird Internet Ap...</a>
+    </li>
+
+    <li>
+        <a href="http://www.pcmag.com/article2/0,2817,2020688,00.asp?ipmat=334236&ipmtype=5"><img src="http://www5.pcmag.com/media/images/382440-the-best-gaming-laptops.jpg?width=163&height=85"/></a>
+        <a href="http://www.pcmag.com/article2/0,2817,2020688,00.asp?ipmat=334236&ipmtype=5">The Best Gaming Laptops of 2015</a>
+    </li>
+
+</ul>
+
+  :262 in error
+[ERROR - 2015-07-10T07:49:55.998Z] Session [d2ed6150-26d5-11e5-9b60-d3f3497d910d] - page.onError - stack:
+  error (http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js:4)
+  ft (http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js:4)
+  wt (http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js:4)
+  st (http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js:4)
+  find (http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js:4)
+  init (http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js:3)
+  b (http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js:3)
+  success (http://www.pcmag.com/article2/0,2817,2483758,00.asp:3129)
+  n (http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js:2)
+  fireWith (http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js:2)
+  w (http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js:4)
+  d (http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js:4)
+
+  :262 in error
+[ERROR - 2015-07-10T07:51:05.982Z] Session [d2ed6150-26d5-11e5-9b60-d3f3497d910d] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'n.createElement(f[t])')
+
+  :262 in error
+[ERROR - 2015-07-10T07:51:05.982Z] Session [d2ed6150-26d5-11e5-9b60-d3f3497d910d] - page.onError - stack:
+  l (http://www.lanacion.com.ar/static/js/ver_2015006231727/-c11-m6-m2-m1-e1-n1-cm9-i6-n2-n6-i4-i9-cm1-cm2-c8-n5-n4-cm3-u9-lf0-pf3-pf8-bs0-bs1-bs2-n7.js:155)
+  (anonymous function) (http://www.lanacion.com.ar/static/js/ver_2015006231727/-c11-m6-m2-m1-e1-n1-cm9-i6-n2-n6-i4-i9-cm1-cm2-c8-n5-n4-cm3-u9-lf0-pf3-pf8-bs0-bs1-bs2-n7.js:155)
+
+  :262 in error
+[ERROR - 2015-07-10T07:51:06.238Z] Session [d2ed6150-26d5-11e5-9b60-d3f3497d910d] - page.onError - msg: TypeError: undefined is not an object (evaluating 'LN.LiveFyre.articleId = "946470"')
+
+  :262 in error
+[ERROR - 2015-07-10T07:51:06.239Z] Session [d2ed6150-26d5-11e5-9b60-d3f3497d910d] - page.onError - stack:
+  (anonymous function) (http://www.lanacion.com.ar/1790372-eeuu-tuvieron-sexo-en-la-playa-y-pueden-enfrentar-15-anos-de-prision:79)
+  l (http://www.lanacion.com.ar/static/js/ver_2015006231727/c7-c2-c3-c12-p2-e3-u7-p1-p3-i3-i5-i8-u3-c6-cm7-cm8-cm5-c1-s1-c10-u10-u11-cm6-t0-t1-c14-i10-u13-pf0-pf7.js:2)
+  fireWith (http://www.lanacion.com.ar/static/js/ver_2015006231727/c7-c2-c3-c12-p2-e3-u7-p1-p3-i3-i5-i8-u3-c6-cm7-cm8-cm5-c1-s1-c10-u10-u11-cm6-t0-t1-c14-i10-u13-pf0-pf7.js:2)
+  ready (http://www.lanacion.com.ar/static/js/ver_2015006231727/c7-c2-c3-c12-p2-e3-u7-p1-p3-i3-i5-i8-u3-c6-cm7-cm8-cm5-c1-s1-c10-u10-u11-cm6-t0-t1-c14-i10-u13-pf0-pf7.js:2)
+  a (http://www.lanacion.com.ar/static/js/ver_2015006231727/c7-c2-c3-c12-p2-e3-u7-p1-p3-i3-i5-i8-u3-c6-cm7-cm8-cm5-c1-s1-c10-u10-u11-cm6-t0-t1-c14-i10-u13-pf0-pf7.js:2)
+
+  :262 in error
+[INFO  - 2015-07-10T07:52:31.025Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-07-10T07:52:58.502Z] Session [d2ed6150-26d5-11e5-9b60-d3f3497d910d] - page.onError - msg: TypeError: null is not an object (evaluating 'this.v.X.connect=function(){}')
+
+  :262 in error
+[ERROR - 2015-07-10T07:52:58.502Z] Session [d2ed6150-26d5-11e5-9b60-d3f3497d910d] - page.onError - stack:
+  Vf (http://pagead2.googlesyndication.com/pagead/expansion_embed.js?source=safeframe:276)
+  (anonymous function) (:0)
+
+  :262 in error
+[ERROR - 2015-07-10T07:55:46.777Z] Session [d2ed6150-26d5-11e5-9b60-d3f3497d910d] - page.onError - msg: TypeError: undefined is not an object (evaluating 'MFP.Localytics.ll')
+
+  :262 in error
+[ERROR - 2015-07-10T07:55:46.778Z] Session [d2ed6150-26d5-11e5-9b60-d3f3497d910d] - page.onError - stack:
+  global code (https://www.myfitnesspal.com/track/external_forums_view:110)
+
+  :262 in error
+[INFO  - 2015-07-10T07:57:31.026Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
