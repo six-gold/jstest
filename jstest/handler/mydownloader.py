@@ -14,7 +14,7 @@ from scrapy.utils.misc import load_object
 from scrapy.http import HtmlResponse
 import traceback
 from twisted.internet.threads import deferToThread
-from jstest.handler.webdriverpool import driver_pool
+#from jstest.handler.webdriverpool import driver_pool
 
 project_setting = get_project_settings()
 
