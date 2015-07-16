@@ -5,6 +5,7 @@ import chardet
 from scrapy.utils.defer import mustbe_deferred
 from scrapy.utils.project import get_project_settings
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import WebDriverException, TimeoutException
@@ -14,12 +15,17 @@ from scrapy.utils.misc import load_object
 from scrapy.http import HtmlResponse
 import traceback
 from twisted.internet.threads import deferToThread
-#from jstest.handler.webdriverpool import driver_pool
+# from jstest.handler.webdriverpool import driver_pool
 
 project_setting = get_project_settings()
 
 
 class SeleniumLogicDownloader(object):
+    ads = project_setting.get('BILIN_ADS')
+    iframe_src_domains = project_setting.get('ADS_IFRAME_SRC_DOMAIN')
+    iframe_ids = project_setting.get('ADS_IFRAME_ID_PREFIX')
+    iframe_names = project_setting.get('ADS_IFRAME_NAME_PREFIX')
+    div_ids = project_setting.get('ADS_DIV_ID_PREFIX')
 
     def __init__(self, agent=None):
         self._agent = agent
@@ -53,12 +59,62 @@ class SeleniumLogicDownloader(object):
         except WebDriverException:
             pass
 
+    def replace_ads(self, driver, *args, **kwargs):
+        for webElement in driver.find_elements(By.TAG_NAME, 'iframe'):
+            iframe_id = webElement.get_attribute('id')
+            iframe_name = webElement.get_attribute('name')
+            ads_size = (webElement.get_attribute('width'), webElement.get_attribute('height'))
+            src = webElement.get_attribute('src')
+            for id_prefix in self.iframe_ids:
+                if id_prefix in iframe_id:
+                    for size in self.ads:
+                        if size == ads_size:
+                            script = "return document.getElementById('%s').setAttribute('src', '%s')" %\
+                                     (iframe_id, self.ads[size])
+                            driver.execute_script(script)
+                            return
+                        elif size[1] == ads_size[1]:
+                            script = "return document.getElementById('%s').setAttribute('src', '%s')" %\
+                                     (iframe_id, self.ads[size])
+                            driver.execute_script(script)
+                            return
+            for name in self.iframe_names:
+                if name in iframe_name:
+                    for size in self.ads:
+                        if size == ads_size:
+                            script = "return document.getElementById('%s').setAttribute('src', '%s')" %\
+                                     (iframe_id, self.ads[size])
+                            driver.execute_script(script)
+                            return
+                        elif size[1] == ads_size[1]:
+                            script = "return document.getElementById('%s').setAttribute('src', '%s')" %\
+                                     (iframe_id, self.ads[size])
+                            driver.execute_script(script)
+                            return
+            for domain in self.iframe_src_domains:
+                if domain in src:
+                    for size in self.ads:
+                        if size == ads_size:
+                            script = "return document.getElementById('%s').setAttribute('src', '%s')" %\
+                                     (iframe_id, self.ads[size])
+                            driver.execute_script(script)
+                            return
+                        elif size[1] == ads_size[1]:
+                            script = "return document.getElementById('%s').setAttribute('src', '%s')" %\
+                                     (iframe_id, self.ads[size])
+                            driver.execute_script(script)
+                            return
+
+    def ad_replace_complete(self, driver, *args, **kwargs):
+        pass
+
     def phantom_download(self, url, *args, **kwargs):
         desire_cap = DesiredCapabilities.PHANTOMJS.copy()
         user_agent = random.choice(project_setting.get('USER_AGENTS'))
         desire_cap["phantomjs.page.settings.userAgent"] = user_agent
         desire_cap['phantomjs.page.customHeaders.User-Agent'] = user_agent
         driver = webdriver.PhantomJS(desired_capabilities=desire_cap)
+        # driver = webdriver.Firefox()
         # driver = driver_pool.get_driver()
         try:
             driver.set_page_load_timeout(project_setting.get('WAIT_PAGE_LOAD'))
@@ -71,8 +127,11 @@ class SeleniumLogicDownloader(object):
             raise
         else:
             try:
-                WebDriverWait(driver, project_setting.get('WAIT_JS_LOAD'))\
+                WebDriverWait(driver, project_setting.get('WAIT_JS_LOAD')) \
                     .until(self.ajax_complete, "Wait For JS Load Timeout")
+                if project_setting.get('REPLACE_ADS'):
+                    self.replace_ads(driver)
+                    time.sleep(30)
                 if project_setting.get("SCREEN_SHOT_SAVE_PATH"):
                     driver.save_screenshot(u'%s%s%s.png' %
                                            (project_setting.get("SCREEN_SHOT_SAVE_PATH"), '\\',
@@ -84,6 +143,8 @@ class SeleniumLogicDownloader(object):
                     traceback.print_exc()
             except TimeoutException as e:
                 raise LoadJsTimeoutException
+            except Exception:
+                traceback.print_exc()
         finally:
             # driver_pool.put_driver(driver)
             driver.quit()

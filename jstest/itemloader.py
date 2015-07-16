@@ -6,3 +6,4 @@ class PageItemLoader(ItemLoader):
     default_output_processor = TakeFirst()
 
     content_in = MapCompose(unicode.strip)
+    # url_in = MapCompose(unicode.strip)

@@ -86,14 +86,15 @@ class Manager(object):
             # 'http://www.wikihow.com/Do-a-Split',
             # 'http://peru.com/futbol/liga-de-campeones/barcelona-vs-bayern-munich-memes-que-dejo-encuentro-noticia-353580-1115221',
             # 'http://www.businessinsider.com/tesla-q1-earnings-report-may-6-2015-5',
-            # 'http://www.dailymail.co.uk/news/article-3070501/Autopsies-2-3-Muslim-students-shot-gun-held-head.html',
-            # 'http://deadspin.com/listen-to-sexual-harasser-isiah-thomas-lie-about-his-se-1702567139',
             # 'http://angularjs.cn/A1aT',
-            # 'http://www.ibtimes.com/tesla-motors-inc-tsla-q1-earnings-model-x-deliveries-track-cash-flow-something-watch-1911320',
+            # 'http://www.myfoxphilly.com/story/28992925/authorities-find',
+            # 'http://www.zdnet.com/article/hybrid-storage-taking-advantage-of-the-cloud/',
+            # 'http://www.pcmag.com/article2/0,2817,2470353,00.asp',
+            'http://www.eweek.com/blogs/storage-station/axcient-speeds-up-data-transfer-in-cloud-storage.html',
         ]
-        with open('urls', 'r') as reader:
-            for line in reader.readlines():
-                urls.append(line.strip('\n'))
+        # with open('urls', 'r') as reader:
+        #     for line in reader.readlines():
+        #         urls.append(line.strip('\n'))
 
         self.setup_spider(urls)
         if self.spiderCount >= setting.get('SPIDER_COUNT'):

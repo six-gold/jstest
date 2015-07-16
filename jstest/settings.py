@@ -24,7 +24,7 @@ DOWNLOAD_HANDLERS = {
 }
 
 # screen shot save path
-# SCREEN_SHOT_SAVE_PATH = '.'
+SCREEN_SHOT_SAVE_PATH = '.'
 
 # driver pool size
 # DRIVER_POOL_SIZE = 4
@@ -81,3 +81,30 @@ LOG_FILE = '.\\spider.log'
 LOG_LEVEL = 'DEBUG'
 LOG_STDOUT = True
 LOG_ENABLED = True
+
+ADS_DIV_ID_PREFIX = [
+    'google_ads_iframe',
+    'google_ads_frame'
+]
+
+ADS_IFRAME_ID_PREFIX = [
+    'google_ads_iframe',
+    'google_ads_frame'
+]
+
+ADS_IFRAME_NAME_PREFIX = [
+    'adblade_ad_iframe',
+    'google_ads_frame',
+]
+
+ADS_IFRAME_SRC_DOMAIN = [
+    'sin1.g.adnxs.com',
+    'ads.proboards.com',
+    'googlesyndication.com'
+]
+
+BILIN_ADS = {
+
+}
+
+REPLACE_ADS = False
