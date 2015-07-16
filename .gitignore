@@ -2,4 +2,3 @@
 *pyc
 /jstest/test/
 *.log
-jstest/*.log
