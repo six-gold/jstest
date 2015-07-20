@@ -39,6 +39,7 @@ class TestSpider(Spider):
         # print response.request.url, html.fromstring(content).text_content().strip()
         loader = PageItemLoader(item=JstestItem(), response=response)
         loader.add_value('content', content)
+        loader.add_value('url', response.url)
         # loader.add_value('url', response.request.url)
         # loader.add_value('content', '%s\t%s' % (response.request.url, html.fromstring(content).text_content().strip()))
         return loader.load_item()

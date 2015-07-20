@@ -24,7 +24,7 @@ DOWNLOAD_HANDLERS = {
 }
 
 # screen shot save path
-SCREEN_SHOT_SAVE_PATH = '.'
+# SCREEN_SHOT_SAVE_PATH = '.'
 
 # driver pool size
 # DRIVER_POOL_SIZE = 4
@@ -83,8 +83,7 @@ LOG_STDOUT = True
 LOG_ENABLED = True
 
 ADS_DIV_ID_PREFIX = [
-    'google_ads_iframe',
-    'google_ads_frame'
+    'google_ads',
 ]
 
 ADS_IFRAME_ID_PREFIX = [
@@ -104,7 +103,7 @@ ADS_IFRAME_SRC_DOMAIN = [
 ]
 
 BILIN_ADS = {
-
+    ('160', '600'): 'http://ads-east.bilinmedia.net/www/images/3af8f0feb730b1e6355a238bbc612113.jpg'
 }
 
 REPLACE_ADS = False

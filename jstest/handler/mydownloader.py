@@ -131,6 +131,7 @@ class SeleniumLogicDownloader(object):
                     .until(self.ajax_complete, "Wait For JS Load Timeout")
                 if project_setting.get('REPLACE_ADS'):
                     self.replace_ads(driver)
+                    # wait for creative load
                     time.sleep(30)
                 if project_setting.get("SCREEN_SHOT_SAVE_PATH"):
                     driver.save_screenshot(u'%s%s%s.png' %
