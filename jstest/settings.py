@@ -103,7 +103,7 @@ ADS_IFRAME_SRC_DOMAIN = [
 ]
 
 BILIN_ADS = {
-    ('160', '600'): 'http://ads-east.bilinmedia.net/www/images/3af8f0feb730b1e6355a238bbc612113.jpg'
+    ('160', '600'): 'url'
 }
 
 REPLACE_ADS = False
