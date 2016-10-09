@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# from jstest.handler.mydownloader import SeleniumDownloadHandler
 
 # Scrapy settings for jstest project
 #
@@ -18,13 +19,8 @@ NEWSPIDER_MODULE = 'jstest.spiders'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'jstest (+http://www.yourdomain.com)'
 
-
-DOWNLOAD_HANDLERS = {
-    'http': 'jstest.handler.mydownloader.SeleniumDownloadHandler'
-}
-
 # screen shot save path
-# SCREEN_SHOT_SAVE_PATH = '.'
+SCREEN_SHOT_SAVE_PATH = '.'
 
 # driver pool size
 # DRIVER_POOL_SIZE = 4
@@ -73,8 +69,12 @@ ITEM_PIPELINES = {
     'jstest.pipelines.JstestPipeline': 300,
 }
 
-WAIT_PAGE_LOAD = 180
-WAIT_JS_LOAD = 120
+DOWNLOAD_HANDLERS = {
+    'http': 'jstest.handler.mydownloader.SeleniumDownloadHandler'
+}
+
+WAIT_PAGE_LOAD = 360
+WAIT_JS_LOAD = 360
 
 # log properties
 LOG_FILE = '.\\spider.log'
@@ -84,6 +84,7 @@ LOG_ENABLED = True
 
 ADS_DIV_ID_PREFIX = [
     'google_ads',
+    'B300',
 ]
 
 ADS_IFRAME_ID_PREFIX = [
@@ -103,7 +104,7 @@ ADS_IFRAME_SRC_DOMAIN = [
 ]
 
 BILIN_ADS = {
-    ('160', '600'): 'url'
+    ('728', '90'): 'http://ads-east.bilinmedia.net/www/images/27c88bc500fa04590509797905ba7d3c.jpg',
 }
 
-REPLACE_ADS = False
+REPLACE_ADS = True

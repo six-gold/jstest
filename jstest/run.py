@@ -90,7 +90,9 @@ class Manager(object):
             # 'http://www.myfoxphilly.com/story/28992925/authorities-find',
             # 'http://www.zdnet.com/article/hybrid-storage-taking-advantage-of-the-cloud/',
             # 'http://www.pcmag.com/article2/0,2817,2470353,00.asp',
-            'http://www.eweek.com/blogs/storage-station/axcient-speeds-up-data-transfer-in-cloud-storage.html',
+            # 'http://www.eweek.com/blogs/storage-station/axcient-speeds-up-data-transfer-in-cloud-storage.html',
+            # 'http://blog.seattlepi.com/football/2015/05/05/seattle-seahawks-have-history-of-giving-troubled-players-second-chances/#32769101=0',
+            'http://www.cheatsheet.com/automobiles/the-13-fastest-modern-muscle-machines.html/?a=viewall'
         ]
         # with open('urls', 'r') as reader:
         #     for line in reader.readlines():
